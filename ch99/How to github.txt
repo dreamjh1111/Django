@@ -1,0 +1,41 @@
+how to use github
+
+GitHub setup
+$ sudo apt-get install git-core
+$ sudo apt-get install update
+
+GitHub version check
+$ sudo git config --global user.name "your account name"
+$ sudo git config --global user.email "your email"
+
+#Option to print the result in color for easy recognition
+$ sudo git config --global color.ui "auto"
+
+Create Git working folder
+$ mkdir mygit
+$ cd mygit
+
+Create a Git repository
+$ sudo git init
+
+Check current Git status
+$ git status
+
+Remote repository registration
+$ sudo git remote add origin https://github.com/~
+$ sudo git fetch origin
+
+Delete remote storage
+$ sudo git remote remove origin
+
+Change file add
+$ sudo git add test.txt
+$ sudo git add -A
+$ sudo git status
+
+Commit to repository
+$ sudo git commit
+$ sudo git commit -m "커밋 메세지 작성"
+
+Push to repository
+$ sudo git push origin +master
